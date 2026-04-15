@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="dashboard">
+        <h1>📚 Book Library Dashboard</h1>
+ 
+        <div class="stats">
+    <div class="card">Total Books: <span id="totalBooks">0</span></div>
+    <div class="card">Authors: <span id="totalAuthors">0</span></div>
+    <div class="card">Available: <span id="availableBooks">0</span></div>
+</div>
+ 
+        <h2>Book List</h2>
+ 
+        <input type="text" id="searchInput" placeholder="Search Book..." onkeyup="searchBook()">
+ 
+        <br><br>
+ 
+        <input type="text" id="bookName" placeholder="Book Name">
+        <input type="text" id="authorName" placeholder="Author Name">
+        <input type="text" id="genreName" placeholder="Genre">
+ 
+        <button onclick="addBook()">Add Book</button>
+ 
+        <table id="bookTable">
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Action</th>
+            </tr>
+ 
+            <tr>
+                <td>Harry Potter</td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td><button onclick="deleteBook(this)">Delete</button></td>
+            </tr>
+ 
+            <tr>
+                <td>Atomic Habits</td>
+                <td>James Clear</td>
+                <td>Self Help</td>
+                <td><button onclick="deleteBook(this)">Delete</button></td>
+            </tr>
+ 
+            <tr>
+                <td>Wings of Fire</td>
+                <td>A.P.J Abdul Kalam</td>
+                <td>Biography</td>
+                <td><button onclick="deleteBook(this)">Delete</button></td>
+            </tr>
+        </table>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+ 

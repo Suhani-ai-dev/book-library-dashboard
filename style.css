@@ -1,0 +1,68 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    width: 300px;
+    text-align: center;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#error {
+    color: red;
+}
+.dashboard {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+ 
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+ 
+.card {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+ 
+th, td {
+    border: 1px solid gray;
+    padding: 12px;
+}
+ 
+th {
+    background: #007BFF;
+    color: white;
+}
+ 
